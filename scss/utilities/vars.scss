@@ -1,11 +1,20 @@
 // google Fonts 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
 $typo-titulo: 'Poppins', sans-serif;
+$typo-titulo2:'Wix Madefor Display';
+$typo-cursiva:'Meddon';
 
 /* ------------ maps ------------*/
 //font-sizes
-$font-size:(h1: 3.5rem, h2: 2.8rem, hdescrip: 1.3rem, h3: 1rem ,h4: .8rem, terc: .45rem);
+$font-size:(
+    h1: 2.6rem, 
+    h2: 2rem, 
+    h3: 1.8rem ,
+    h4: 1.4rem, 
+    h5: .85rem,
+    p: .6rem);
 //each
     @each $font, $value in $font-size {
         .font--#{$font} {
@@ -22,10 +31,92 @@ $redes: (
     spotify: #81b71a
 );
 //map-get
-$colores--principales: (nav-menu: rgb(192, 192, 192),);
+$colors: (
+    index-menu: rgb(192, 192, 192),
+    title: #0C120C,
+    lazuli: #33658A,
+    naranja: #FF6B35,
+    ghost: #ECEBF3,
+    );
 $colores--secundarios: (
     title-secondary: orangered,
     subtitle-secondary: rgba(133, 133, 133, 1),
     title-politic: rgba(128, 128, 128, 0.664),
     grids-soporte: #d7d7d7,
 );
+
+%sections{
+        height: 100vh;
+        padding: 1.2rem;
+        h2{
+            display: flex;
+            font-size: map-get($font-size, h2 );
+            align-items: center;
+            justify-content: center;
+        }
+        .mas-opciones{
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            gap: 1rem;
+            margin-left: -8%;
+        }
+}
+%grid{
+    .dd__grid{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    .dd__grid > div{
+            
+            background-size: cover;
+            height: 8rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            isolation: isolate;
+        }
+        .dd__grid > div::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color:  rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        .dd__grid > div:nth-child(1){
+            background-position: center;
+            background-size: cover;
+        }
+        .dd__grid > div:nth-child(2){
+            background-size: cover;
+            background-position: center;
+        }
+        .dd__grid > div:nth-child(3){
+            background-size: cover;
+            background-position: center;
+        }
+        .dd__grid > div:nth-child(4){
+            background-size: cover;
+            background-position: center;
+        }
+        .dd__grid > div:nth-child(5){
+            background-size: cover;
+            background-position: center;
+        }
+        .dd__grid > div:nth-child(6){
+            background-size: cover;
+            background-position: center;
+        }
+}
+%footer-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -18,7 +18,7 @@
 
     <div class="hero">
         <header>
-            <img class="logo" src="./recursos/img/Logo-bl-ok.jpg" alt="Logo">
+            <img class="logo" src="./scss/utilities/recursos/img/Logopng.png" alt="Logo">
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
@@ -26,7 +26,7 @@
     <!-- mobile menu -->
         <div class="mobile-menu" id="mobile-menu">
                 <div class="mobile-menu__header">
-                    <img class="logo" src="./recursos/img/Logo-bl-ok.jpg" alt="Logo">
+                    <img class="logo" src="./scss/utilities/recursos/img/logowhite.png" alt="Logo">
                     <button class="close-menu" id="close-menu">
                         <i class="bi bi-x-lg"></i>
                     </button>
@@ -57,32 +57,204 @@
                 </ul>
             </nav>
         </header>
+
+        
         <div class="hero__content">
-            <h1>DESCUBRE</h1>
-            <h4>nuevos destinos</h4>
-            <p>Viaja!</p>
-            <h4>Tu próximo viaje comienza hoy!</h4>
-            <p>TU PÁGINA ONLINE CON LAS MEJORES OFERTAS.</p>
+            <h1>DESCUBRE <span class="subt">nuevos destinos</span></h1>
+        </div>
+        <div class="media__icons">
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="uil uil-facebook"></i>
+            <i class="uil uil-twitter-alt"></i>
+            <i class="uil uil-github"></i>
+            <i class="bi bi-spotify"></i>
+        </div>
+        <div class="hero__content--2">
+            <h5>Viajá!</h5>
+            <p class="hero__content--publicidad">Tu próximo viaje comienza hoy!</p>
+            <p class="hero__content--publicidadpag">TU PÁGINA ONLINE CON LAS MEJORES OFERTAS.</p>
         </div>
     </div>
+    <!--  media-icons -->
+    
     
 <!-- Main ppal -->
     <main>
-        <!-- <h2>Explora Lugares</h2>
-        <ul class="mas-opciones">
-            <li><a href=""><h3>Ver mas</h3></a></li>
-            <li><a href=""><h3>Pasaporte Ice Land</h3></a></li>
-        </ul> -->
-        
+        <div class="section__explora-lugares">
+            <h2>Explora Lugares</h2>
+            <ul class="mas-opciones">
+                <li><a href=""><p>Ver mas</p></a></li>
+                <li><a href=""><p>Pasaporte Ice Land</p></a></li>
+            </ul>
+            <div class="dd__grid">
+                <div><h4>Tokio</h4></div>
+                <div><h4>Nueva York</h4></div>
+                <div><h4>Sydney</h4></div>
+                <div><h4>Río de Janeiro</43></div>
+                <div><h4>Puerto Madero</h4></div>
+                <div><h4>Montevideo</h4></div>
+            </div>
+        </div>
+
+        <div class="recomendaciones">
+            <h2>Recomendaciones y tips para viajar barato</h2>
+            <ul class="mas-opciones">
+                <li><a href=""><p>Ver mas</p></a></li>
+                <li><a href=""><p>Pasaporte Ice Land</p></a></li>
+            </ul>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./scss/utilities/recursos/img/hot sale.avif" class="d-block carousel__info" alt="...">
+                    <div class="carousel d-md-block">
+                    <h5>Las mejores ofertas del Hot Sale!</h5>
+                    <p>Ya comenzó el Hot Sale y aparecieron algunos vuelos muy interesantes. En esta nota iremos actualizando las mejores ofertas encontradas que vayan apareciendo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./scss/utilities/recursos/img/consejos.avif" class="d-block carousel__info" alt="...">
+                    <div class="d-md-block">
+                    <h5>5 consejos para las turbulencias de avión</h5>
+                    <p>Cuando un avión sufre turbulencias, se mueve de forma brusca, ¡y los que van dentro, también! </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./scss/utilities/recursos/img/sma.avif" class="d-block w-100" alt="...">
+                    <div class="d-md-block">
+                    <h5>Viví el invierno en San Martín de los Andes</h5>
+                    <p>Comienza a sentirse el frío y es el momento para pensar en el destino perfecto para estas vacaciones de invierno. ¿Y qué mejor que visitar San Martín de los Andes? Un destino único que te invita a disfrutar de sus bellos paisajes nevados junto a las mejores actividades y gastronomía.</p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="destinos__destacados">
+            <h2>Destinos Destacados</h2>
+            <ul class="mas-opciones">
+                <li><a href=""><p>Ver mas</p></a></li>
+                <li><a href=""><p>Pasaporte Ice Land</p></a></li>
+            </ul>
+            <div class="dd__grid">
+                <div><h4>Venecia</h4></div>
+                <div><h4>Nueva York</h4></div>
+                <div><h4>Marruecos</h4></div>
+                <div><h4>Japón</43></div>
+                <div><h4>Venezuela</h4></div>
+                <div><h4>México</h4></div>
+            </div>
+        </div>
+
+        <div class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <ul class="mas-opciones">
+                <li><a href=""><p>Ver mas</p></a></li>
+                <li><a href=""><p>Pasaporte Ice Land</p></a></li>
+            </ul>
+            <p class="nosotros--p">Creamos una experiencia de viaje al proporcionar nuestro plan turistico que mejor se adapte a vos!</p>
+            <video class="gopro" src="https://www.youtube.com/embed/bY_6GweuWqA?start=1">Go Pro</video>
+            <form class="form">
+                <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Nombre</span>
+                    </label>
+            
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Apellido</span>
+                    </label>
+                </div>  
+                        
+                <label>
+                    <input required="" placeholder="" type="email" class="input">
+                    <span>email</span>
+                </label> 
+                    
+                <label>
+                    <input required="" type="tel" placeholder="" class="input">
+                    <span>Número de contacto</span>
+                </label>
+                <label>
+                    <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                    <span>Mensaje</span>
+                </label>
+                <button class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Enviar</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+                </button>
+            </form>
+        </div> 
     </main>
 
 <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+        <!-- <section class="section__politic">
+            <p class="section__politic--parrafo">
+                1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an IceLand Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an IceLand Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. IceLand or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from IceLand's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.
+                To access and use all the features of IceLand Card, you must add IceLand Card to Wallet on an display desktop or mobile. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.
+                Available for qualifying applicants in the United States.
+                IceLand Card is issued by JeronimoNuñez Arg., La Plata.
+            </p>
+        </div> -->
+        <hr class="hr">
+        <div class="logo-menu">
+            <img class="logo" src="./scss/utilities/recursos/img/desktop/logo sin editar.jpg" alt="">
+            <h5 class="footer__logo">ICELAND</h5>
+            <p class="footer_sublogo">adventures</p>
+            <p class="footer_text">Empresas asociadas con ICE LAND adventures</p>
+            <nav class="footer-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="footer__grid">
+            <div class="container">
+                <div class="caja1"></div>
+                <div class="caja2"></div>
+                <div class="caja3"></div>
+                <div class="caja4"></div>
+                <div class="caja5"></div>
+                <div class="caja6"></div>
+                <div class="caja7"></div>
+                <div class="caja8"></div>
+                <div class="caja9"></div>
+            </div>
+        </div>
+        <div class="icons-copyright">
+            <div class="icons">
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            </div>
+            <hr>
+            <p class="copyright">© 2023 JeronimoNuñez. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
