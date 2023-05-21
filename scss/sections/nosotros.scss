@@ -1,0 +1,55 @@
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: $typo-titulo;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+h2, h3, h4, p, .mobile-menu__nav{
+    font-family: $typo-titulo;
+}
+
+.mobile-menu, .desktop-menu{
+    display: none;
+}
+.hero__background--nosotros{
+    background-image: url(https://i.pinimg.com/564x/df/f5/6a/dff56a456fcece0167c0f183594a5ed4.jpg);
+    background-position: center;
+    height: 95vh;
+}
+.hero__content--nosotros{
+    @extend %sections;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    .flecha{
+        font-size: 15px;
+    }
+}
+.nosotros__grid {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "nosotros1 nosotros1"
+    "nosotros2 nosotros2";
+    .nosotros1{
+        grid-area: nosotros1;
+        background-image: url(https://lh3.googleusercontent.com/XPkRQEkGTWHLyQ7gtsSemr5-KpwAsZOteerqMUKXYHqtNRp6zH6Mriiu-Pe_heBCbQ_xTTvK69gE9aY2D4qJjDqOvuwen2ezqBxrySg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40vh;
+    }
+    .nosotros2{
+        grid-area: nosotros2;
+        background-image: url(https://lh3.googleusercontent.com/qY9BFCL3sg69_ZbtkL8oUF3fHaGcCpZ5v0395aPK8fLzx06Blc_vrLU6KNqYtcrMWIFMUdddmIaYi0iowpDQYmiKf8g9WJyjQQ2HPvUS);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.footer{
+    @extend %footer;
+}
+

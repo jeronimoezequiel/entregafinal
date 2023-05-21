@@ -1,3 +1,18 @@
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: $typo-titulo;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+h2, h3, h4, p, .mobile-menu__nav{
+    font-family: $typo-titulo;
+}
+
+.mobile-menu, .desktop-menu{
+    display: none;
+}
 .blog{
     background-image: url(https://static.wixstatic.com/media/042c65_121d3108707e4a65a55e59861d757231~mv2.png/v1/fill/w_979,h_430,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/042c65_121d3108707e4a65a55e59861d757231~mv2.png);
     background-position: center;

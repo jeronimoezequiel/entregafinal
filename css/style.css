@@ -23,15 +23,15 @@
 .font--p {
   font-size: 0.6rem; }
 
-main .recomendaciones, main .destinos__destacados, main .nosotros, .hero__content-destinos, .container__section-2, .section__estilos-de-viaje, .last__minutes, .top__argentina {
+main .recomendaciones, main .destinos__destacados, main .nosotros, .hero__content-destinos, .container__section-2, .section__estilos-de-viaje, .last__minutes, .top__argentina, .hero__content--nosotros {
   height: 100vh;
   padding: 1.2rem; }
-  main .recomendaciones h2, main .destinos__destacados h2, main .nosotros h2, .hero__content-destinos h2, .container__section-2 h2, .section__estilos-de-viaje h2, .last__minutes h2, .top__argentina h2 {
+  main .recomendaciones h2, main .destinos__destacados h2, main .nosotros h2, .hero__content-destinos h2, .container__section-2 h2, .section__estilos-de-viaje h2, .last__minutes h2, .top__argentina h2, .hero__content--nosotros h2 {
     display: flex;
     font-size: 2rem;
     align-items: center;
     justify-content: center; }
-  main .recomendaciones .mas-opciones, main .destinos__destacados .mas-opciones, main .nosotros .mas-opciones, .hero__content-destinos .mas-opciones, .container__section-2 .mas-opciones, .section__estilos-de-viaje .mas-opciones, .last__minutes .mas-opciones, .top__argentina .mas-opciones {
+  main .recomendaciones .mas-opciones, main .destinos__destacados .mas-opciones, main .nosotros .mas-opciones, .hero__content-destinos .mas-opciones, .container__section-2 .mas-opciones, .section__estilos-de-viaje .mas-opciones, .last__minutes .mas-opciones, .top__argentina .mas-opciones, .hero__content--nosotros .mas-opciones {
     display: flex;
     text-decoration: none;
     list-style-type: none;
@@ -1236,6 +1236,20 @@ h2, h3, h4, p, .mobile-menu__nav {
     background-size: cover;
     background-position: center; }
 
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px; }
+
+h2, h3, h4, p, .mobile-menu__nav {
+  font-family: "Poppins", sans-serif; }
+
+.mobile-menu, .desktop-menu {
+  display: none; }
+
 .blog {
   background-image: url(https://static.wixstatic.com/media/042c65_121d3108707e4a65a55e59861d757231~mv2.png/v1/fill/w_979,h_430,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/042c65_121d3108707e4a65a55e59861d757231~mv2.png);
   background-position: center;
@@ -1305,3 +1319,47 @@ h2, h3, h4, p, .mobile-menu__nav {
 
 .footer {
   margin-top: 27%; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px; }
+
+h2, h3, h4, p, .mobile-menu__nav {
+  font-family: "Poppins", sans-serif; }
+
+.mobile-menu, .desktop-menu {
+  display: none; }
+
+.hero__background--nosotros {
+  background-image: url(https://i.pinimg.com/564x/df/f5/6a/dff56a456fcece0167c0f183594a5ed4.jpg);
+  background-position: center;
+  height: 95vh; }
+
+.hero__content--nosotros {
+  backdrop-filter: blur(3px);
+  border-radius: 10px; }
+  .hero__content--nosotros .flecha {
+    font-size: 15px; }
+
+.nosotros__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px 7px;
+  grid-auto-flow: row;
+  grid-template-areas: "nosotros1 nosotros1" "nosotros2 nosotros2"; }
+  .nosotros__grid .nosotros1 {
+    grid-area: nosotros1;
+    background-image: url(https://lh3.googleusercontent.com/XPkRQEkGTWHLyQ7gtsSemr5-KpwAsZOteerqMUKXYHqtNRp6zH6Mriiu-Pe_heBCbQ_xTTvK69gE9aY2D4qJjDqOvuwen2ezqBxrySg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh; }
+  .nosotros__grid .nosotros2 {
+    grid-area: nosotros2;
+    background-image: url(https://lh3.googleusercontent.com/qY9BFCL3sg69_ZbtkL8oUF3fHaGcCpZ5v0395aPK8fLzx06Blc_vrLU6KNqYtcrMWIFMUdddmIaYi0iowpDQYmiKf8g9WJyjQQ2HPvUS);
+    background-position: center;
+    background-repeat: no-repeat; }
