@@ -1,0 +1,82 @@
+.blog{
+    background-image: url(https://static.wixstatic.com/media/042c65_121d3108707e4a65a55e59861d757231~mv2.png/v1/fill/w_979,h_430,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/042c65_121d3108707e4a65a55e59861d757231~mv2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    .blog--title{
+        font-family: $typo-titulo;
+        font-size: 1rem;
+        margin-top: 45%;
+        margin-left: 21%;
+    }
+    .blog--grid {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 8px 7px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "caja1 caja2"
+        "caja3 caja4"
+        "caja5 caja6";
+        .caja1{
+            grid-area: caja1;
+            height: 20vh;
+            background-image: url(https://lh3.googleusercontent.com/xA8see4i6qO6wkS01yD9qDc1fi7ITe55etVtgU37U4AvPD5WrDxmvSarD4sDdoIurh3r7K6lGo3-wiJNDQ9NE7EgiURgMfbgFojoAjF17g);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        .caja2{
+            grid-area: caja2;
+            height: 20vh;
+            background-image: url(https://lh3.googleusercontent.com/2KvvBOdFN2ywrM7DgB96UybVN79ILsBaed5hzrF1hGcM-IMFPOqI7wzsfHZwdSoDUh7mYriEOWlJQ5X1lK8_LMhJXbPRzhBusxWhNDU);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        .caja3{
+            grid-area: caja3;
+            height: 20vh;
+            background-image: url(https://lh3.googleusercontent.com/1894jEY5PJlesR-e8P_F6sWAw0NyugUZbQ8JkxziB9Kh5HGjehKKNAaDmOyIzWbuNU_aWjI9YaJ4_LUb1wKBg--Cb__Hz9VZgY384dyY);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        .caja4{
+            grid-area: caja4;
+            height: 20vh;
+            background-image: url(https://lh3.googleusercontent.com/gqe_lnpknJsJ00Lq-bfAcM4LI8Y0r_VCChR529XkAUB0A_QxKJbng21-pNJN0ergUmasn0w3wTjQFbhNaCRTNvqLZYhF5bYgu4vptrNY);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        .caja5{
+            grid-area: caja5;
+            height: 30vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qvLCI9vx2WEUEkAMFpN8bwS5UFx0xPKbwA&usqp=CAU);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;            
+        }
+        .caja6{
+            grid-area: caja6;
+            height: 30vh;
+            background-image: url(https://felizviaje.tur.ar/wp-content/uploads/2021/08/Logo-para-web.png);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+    }
+}
+.blog--container{
+    background-color: red;
+    height: 20vh;
+    margin-top: 25%;
+}
+.footer{
+    @extend %footer;
+    margin-top: 27%;
+}

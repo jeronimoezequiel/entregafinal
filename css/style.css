@@ -23,15 +23,15 @@
 .font--p {
   font-size: 0.6rem; }
 
-main .recomendaciones, main .destinos__destacados, main .nosotros, .hero__content-destinos, .container__section-2, .section__estilos-de-viaje, .last__minutes {
+main .recomendaciones, main .destinos__destacados, main .nosotros, .hero__content-destinos, .container__section-2, .section__estilos-de-viaje, .last__minutes, .top__argentina {
   height: 100vh;
   padding: 1.2rem; }
-  main .recomendaciones h2, main .destinos__destacados h2, main .nosotros h2, .hero__content-destinos h2, .container__section-2 h2, .section__estilos-de-viaje h2, .last__minutes h2 {
+  main .recomendaciones h2, main .destinos__destacados h2, main .nosotros h2, .hero__content-destinos h2, .container__section-2 h2, .section__estilos-de-viaje h2, .last__minutes h2, .top__argentina h2 {
     display: flex;
     font-size: 2rem;
     align-items: center;
     justify-content: center; }
-  main .recomendaciones .mas-opciones, main .destinos__destacados .mas-opciones, main .nosotros .mas-opciones, .hero__content-destinos .mas-opciones, .container__section-2 .mas-opciones, .section__estilos-de-viaje .mas-opciones, .last__minutes .mas-opciones {
+  main .recomendaciones .mas-opciones, main .destinos__destacados .mas-opciones, main .nosotros .mas-opciones, .hero__content-destinos .mas-opciones, .container__section-2 .mas-opciones, .section__estilos-de-viaje .mas-opciones, .last__minutes .mas-opciones, .top__argentina .mas-opciones {
     display: flex;
     text-decoration: none;
     list-style-type: none;
@@ -228,7 +228,7 @@ main .section__explora-lugares .dd__grid > div:nth-child(6) {
     font-size: 12px;
     margin-top: -26px; }
 
-.hero__content-destinos .Oceania, .hero__content-destinos .AfricaA, .hero__content-destinos .Asia, .hero__content-destinos .América, .hero__content-destinos .Europa, .container__section-2 .aerolineas-arg, .container__section-2 .fly-bondi, .container__section-2 .iberia, .container__section-2 .sky, .container__section-2 .avianca, .container__section-2 .air-europa, .container__section-2 .jet-smart, .container__section-2 .klm, .container__section-2 .ita-airways, .container__section-2 .emirates, .container__section-2 .lufthansa, .container__section-2 .gol, .container__section-2 .buscador-de-vuelos, .container__section-2 .ofertas, .container__section-2 .ahorra-tiempo, .container__section-2 .seguinos {
+.hero__content-destinos .Oceania, .hero__content-destinos .AfricaA, .hero__content-destinos .Asia, .hero__content-destinos .América, .hero__content-destinos .Europa, .container__section-2 .aerolineas-arg, .container__section-2 .fly-bondi, .container__section-2 .iberia, .container__section-2 .sky, .container__section-2 .avianca, .container__section-2 .air-europa, .container__section-2 .jet-smart, .container__section-2 .klm, .container__section-2 .ita-airways, .container__section-2 .emirates, .container__section-2 .lufthansa, .container__section-2 .gol, .container__section-2 .buscador-de-vuelos, .container__section-2 .ofertas, .container__section-2 .ahorra-tiempo, .container__section-2 .seguinos, .top__argentina .top-a, .top__argentina .buenos-aires, .top__argentina .ofertas, .publicidad .europa, .publicidad .app, .publicidad .tira {
   border-radius: 10px;
   height: 140px;
   display: flex;
@@ -261,6 +261,45 @@ main .section__explora-lugares .dd__grid > div:nth-child(6) {
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1; } }
+
+.smiles .container__swiper {
+  width: 90%;
+  padding: 10px 40px;
+  font-family: "Poppins", sans-serif; }
+  .smiles .container__swiper .swiper {
+    width: 100%;
+    height: 100%; }
+  .smiles .container__swiper .swiper-slide {
+    position: relative;
+    text-align: start;
+    font-size: 18px;
+    background: #efefef;
+    border-radius: 15px solid;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25); }
+  .smiles .container__swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+  .smiles .container__swiper .card__description {
+    padding: 1rem 1rem;
+    font-size: 0.85rem; }
+  .smiles .container__swiper h5 {
+    font-size: 1rem; }
+  .smiles .container__swiper .card__description {
+    background-color: #efefef; }
+  .smiles .container__swiper .card-title, .smiles .container__swiper .card__description, .smiles .container__swiper .card-text {
+    margin-bottom: 0.5rem; }
+  .smiles .container__swiper .card__description, .smiles .container__swiper .card-reserva {
+    text-align: center; }
+  .smiles .container__swiper .card-reserva {
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    background-color: orangered;
+    font-size: 1rem; }
 
 * {
   margin: 0;
@@ -1125,3 +1164,144 @@ h2, h3, h4, p, .mobile-menu__nav {
       align-items: center;
       text-align: center;
       font-size: 1rem; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px; }
+
+h2, h3, h4, p, .mobile-menu__nav {
+  font-family: "Poppins", sans-serif; }
+
+.mobile-menu, .desktop-menu {
+  display: none; }
+
+.top__argentina {
+  height: 85vh; }
+  .top__argentina .container-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "AfricaA Asia" "top-a   top-a"; }
+  .top__argentina .top-a {
+    grid-area: top-a;
+    background-image: url(https://media.staticontent.com/media/pictures/50ecf17c-4933-4c97-a65b-f561915c3ceb/614x279);
+    background-position: center;
+    background-size: cover;
+    color: white; }
+  .top__argentina .buenos-aires {
+    color: white;
+    grid-area: AfricaA;
+    height: 40vh;
+    background-image: url(https://media.staticontent.com/media/pictures/4ba0fb46-f4e3-470f-b48d-497425a32d03/360x360);
+    background-position: center;
+    background-size: cover; }
+  .top__argentina .ofertas {
+    grid-area: Asia;
+    height: 40vh;
+    background-image: url(https://i.pinimg.com/564x/20/01/67/200167d66e04966e450ccd089165e404.jpg);
+    background-size: cover;
+    background-position: center; }
+
+.smiles {
+  height: 98vh; }
+
+.publicidad {
+  height: 70vh; }
+  .publicidad .container-publicidad {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "app" "europa" "tira" "tira"; }
+  .publicidad .europa {
+    grid-area: europa;
+    background-image: url(https://lh3.googleusercontent.com/3f4rZFYy_PzYEKUBA9McDMTVJzGXNUwpAoGnaCdgAnQmgyd2SvD8T1SkDuN202O_UMMsbYO9EGaRpHECLeb0SNofLtHCdysmWrrr0N2nnA);
+    background-size: cover;
+    background-position: center; }
+  .publicidad .app {
+    grid-area: app;
+    background-image: url(https://lh3.googleusercontent.com/EJBd6zjVhZ1cKJZm-VTNIm2YAJ6aTEQ-HoV10sVhw9bvKQg0QTqOAiPoKdtR2zFWvKioouHNtqJLYxT9qIT-8GP5Ajz7QgXUY7mqAQHaQA);
+    background-size: cover;
+    background-position: center; }
+  .publicidad .tira {
+    grid-area: tira;
+    background-image: url(https://media.staticontent.com/media/pictures/776083f6-a559-48af-bbf6-c3b300de9ea1);
+    background-size: cover;
+    background-position: center; }
+
+.blog {
+  background-image: url(https://static.wixstatic.com/media/042c65_121d3108707e4a65a55e59861d757231~mv2.png/v1/fill/w_979,h_430,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/042c65_121d3108707e4a65a55e59861d757231~mv2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh; }
+  .blog .blog--title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-top: 45%;
+    margin-left: 21%; }
+  .blog .blog--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px 7px;
+    grid-auto-flow: row;
+    grid-template-areas: "caja1 caja2" "caja3 caja4" "caja5 caja6"; }
+    .blog .blog--grid .caja1 {
+      grid-area: caja1;
+      height: 20vh;
+      background-image: url(https://lh3.googleusercontent.com/xA8see4i6qO6wkS01yD9qDc1fi7ITe55etVtgU37U4AvPD5WrDxmvSarD4sDdoIurh3r7K6lGo3-wiJNDQ9NE7EgiURgMfbgFojoAjF17g);
+      background-size: cover;
+      background-position: center;
+      width: 100%; }
+    .blog .blog--grid .caja2 {
+      grid-area: caja2;
+      height: 20vh;
+      background-image: url(https://lh3.googleusercontent.com/2KvvBOdFN2ywrM7DgB96UybVN79ILsBaed5hzrF1hGcM-IMFPOqI7wzsfHZwdSoDUh7mYriEOWlJQ5X1lK8_LMhJXbPRzhBusxWhNDU);
+      background-size: cover;
+      background-position: center;
+      width: 100%; }
+    .blog .blog--grid .caja3 {
+      grid-area: caja3;
+      height: 20vh;
+      background-image: url(https://lh3.googleusercontent.com/1894jEY5PJlesR-e8P_F6sWAw0NyugUZbQ8JkxziB9Kh5HGjehKKNAaDmOyIzWbuNU_aWjI9YaJ4_LUb1wKBg--Cb__Hz9VZgY384dyY);
+      background-size: cover;
+      background-position: center;
+      width: 100%; }
+    .blog .blog--grid .caja4 {
+      grid-area: caja4;
+      height: 20vh;
+      background-image: url(https://lh3.googleusercontent.com/gqe_lnpknJsJ00Lq-bfAcM4LI8Y0r_VCChR529XkAUB0A_QxKJbng21-pNJN0ergUmasn0w3wTjQFbhNaCRTNvqLZYhF5bYgu4vptrNY);
+      background-size: cover;
+      background-position: center;
+      width: 100%; }
+    .blog .blog--grid .caja5 {
+      grid-area: caja5;
+      height: 30vh;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qvLCI9vx2WEUEkAMFpN8bwS5UFx0xPKbwA&usqp=CAU);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%; }
+    .blog .blog--grid .caja6 {
+      grid-area: caja6;
+      height: 30vh;
+      background-image: url(https://felizviaje.tur.ar/wp-content/uploads/2021/08/Logo-para-web.png);
+      background-size: cover;
+      background-position: center;
+      width: 100%; }
+
+.blog--container {
+  background-color: red;
+  height: 20vh;
+  margin-top: 25%; }
+
+.footer {
+  margin-top: 27%; }
