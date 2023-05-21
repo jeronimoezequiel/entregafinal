@@ -8,4 +8,5 @@ btnOpenMenu.addEventListener("click" , () => {
 
 btnCloseMenu.addEventListener("click" , () => {
     menu.classList.add("disabled");
-})
+});
+
