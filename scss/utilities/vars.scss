@@ -381,3 +381,15 @@ $colores--secundarios: (
         }
     }
 }
+%ayuda--grid{
+    padding: 10px;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    height: 30vh;
+    gap: .5rem;
+}

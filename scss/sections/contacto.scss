@@ -1,0 +1,206 @@
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: $typo-titulo;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+h2, h3, h4, p, .mobile-menu__nav{
+    font-family: $typo-titulo;
+}
+
+.mobile-menu, .desktop-menu{
+    display: none;
+}
+.hero__background--contacto{
+    .contacto__grid {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 8px 7px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "contacto1"
+        "contacto2";
+    .contacto1{
+        grid-area: contacto1;
+        height: 50vh;
+        background-image: url(https://i.pinimg.com/564x/0e/6d/0c/0e6d0cca93b2eed3361137e2daade083.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contacto2{
+        grid-area: contacto2;
+        height: 50vh;
+        background-image: url(https://i.pinimg.com/564x/cf/63/7f/cf637f52ecc566d9e1914966aa54fde0.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    }
+}
+.hero__content-contacto{
+    @extend %sections;
+    height: 120vh;
+    .contacto__grid--soporte {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 8px 7px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "aerolineas"
+        "iceland"
+        "usuario";
+    }
+    .aerolineas {
+        grid-area: aerolineas;
+        font-family: $typo-titulo;
+        height: 35vh;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: map-get($font-size, h4 );
+        background-color: map-get($colores--secundarios, grids-soporte );
+        color: black;
+
+    }
+    .iceland {
+        grid-area: iceland;
+        font-family: $typo-titulo;
+        height: 35vh;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: map-get($font-size, h4 );
+        background-color: map-get($colores--secundarios, grids-soporte );
+        color: black;
+    }
+    .usuario {
+        grid-area: usuario;
+        font-family: $typo-titulo;
+        height: 35vh;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: map-get($font-size, h4 );
+        background-color: map-get($colores--secundarios, grids-soporte );
+        color: black;
+    }
+}
+.ayuda{
+    @extend %sections;
+    text-align: center;
+    height: 32vh;
+    font-family: $typo-titulo;
+    color: black;
+    .search{
+        .input {
+            margin-top: 4%;
+            min-width: 100%;
+            border: none;
+            padding: 1rem;
+            border-radius: 1rem;
+            background: #e8e8e8;
+            box-shadow: 5px 5px 30px #c5c5c5, -10px -10px 50px #ffffff;
+            transition: 0.3s;
+        }
+        .input:focus {
+            outline-color: #e8e8e8;
+            background: #e8e8e8;
+            box-shadow: inset 20px 20px 60px #c5c5c5,
+            inset -20px -20px 60px #ffffff;
+            transition: 0.3s;
+        }
+    }
+}
+.ayuda__grid{
+    .contacto__grid--pasos{
+            display: grid;
+            font-family: $typo-titulo;
+            font-weight: 500;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 8px 7px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "ayuda1 ayuda2"
+            "ayuda3 ayuda4"
+            "ayuda5 ayuda6";
+        }
+        .ayuda1 {
+            grid-area: ayuda1;
+            @extend %ayuda--grid;
+        }
+        .ayuda2 {
+            grid-area: ayuda2;
+            @extend %ayuda--grid;
+        }
+        .ayuda3 {
+            grid-area: ayuda3;
+            @extend %ayuda--grid;
+        }
+        .ayuda4 {
+            grid-area: ayuda4;
+            @extend %ayuda--grid;
+        }
+        .ayuda5 {
+            grid-area: ayuda5;
+            @extend %ayuda--grid;
+        }
+        .ayuda6 {
+            grid-area: ayuda6;
+            @extend %ayuda--grid;
+        }
+}
+.newsletter{
+    @extend %sections;
+    text-align: center;
+    height: 43vh;
+    background: rgb(182,182,182);
+    background: radial-gradient(circle, rgba(182,182,182,1) 0%, rgba(255,251,251,1) 100%);
+}
+.input-group{
+    font-family: $typo-titulo;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    min-width: 100%;
+        #email{
+            text-align: center;
+            min-width: 100%;
+        }
+    .button__submit{
+        background-color: black;
+        min-width: 100%;
+        color: white;
+        cursor: pointer;
+        transition: height 0.3s;
+    }
+    .button__submit:hover{
+        background: orange;
+    }
+}
+.footer{
+    @extend %footer;
+    margin-top: 0%;
+}
+
+
+
+
+
+
+
