@@ -843,57 +843,277 @@ main .nosotros {
     font-size: 12px;
     margin-top: -26px; }
 
-@media screen and (min-width: 820px) {
-  .hero {
+@media screen and (min-width: 1366px) {
+  .hero__background {
     background-image: url(https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    padding: 2rem 6rem; }
-    .hero h1 {
-      color: #0C120C;
-      font-size: 2.6rem; }
-      .hero h1 .subt {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .hero__background .hero {
+      padding: 2rem 6rem; }
+      .hero__background .hero .logo {
+        display: none; }
+      .hero__background .hero .open-menu {
+        display: none; }
+      .hero__background .hero .mobile-menu {
+        display: none; }
+      .hero__background .hero .desktop-menu {
+        display: flex;
+        z-index: 111; }
+        .hero__background .hero .desktop-menu ul {
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          border-radius: 50px;
+          backdrop-filter: blur(50px);
+          height: 50px;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          gap: 1.5rem;
+          position: fixed;
+          margin-top: -1%;
+          margin-left: 22%;
+          padding: 20px; }
+          .hero__background .hero .desktop-menu ul li {
+            list-style-type: none; }
+            .hero__background .hero .desktop-menu ul li a {
+              text-decoration: none;
+              color: white; }
+        .hero__background .hero .desktop-menu .buscador .typo-titulo {
+          font-family: "Poppins", sans-serif;
+          font-family: 'Poppins';
+          position: absolute;
+          font-size: 21px;
+          top: 42%;
+          left: 10.1%;
+          right: 40px;
+          max-width: 1200px;
+          height: 180px;
+          color: orangered;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(5px);
+          text-shadow: rgba(255, 255, 255, 0.1);
+          padding: 14px;
+          border-radius: 10px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-right: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero__background .hero .desktop-menu .buscador .buscador__destino {
+          font-family: 'Poppins';
+          font-size: 1px;
+          color: black;
+          position: absolute;
+          font-size: 14px;
+          top: 51%;
+          left: 12%; }
+        .hero__background .hero .desktop-menu .buscador .buscador__fechas {
+          font-family: 'Poppins';
+          font-size: 1px;
+          color: black;
+          position: absolute;
+          font-size: 14px;
+          top: 51%;
+          left: 37.5%; }
+        .hero__background .hero .desktop-menu .buscador .buscador__hab {
+          font-family: 'Poppins';
+          font-size: 1px;
+          color: black;
+          position: absolute;
+          font-size: 14px;
+          top: 51%;
+          left: 63.5%; }
+        .hero__background .hero .desktop-menu .buscador__input-form {
+          position: absolute;
+          top: 55%;
+          left: 11.2%; }
+          .hero__background .hero .desktop-menu .buscador__input-form .input-form-text {
+            border: solid 2px #000;
+            width: 155%;
+            height: 35px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000;
+            transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form .textUser {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            position: absolute;
+            left: 15px;
+            top: -16px;
+            width: 110%;
+            color: rgba(133, 133, 133, 0.4);
+            pointer-events: none;
+            transform: translateY(1.3rem);
+            transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form .input-form-text:focus, .hero__background .hero .desktop-menu .buscador__input-form .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out; }
+          .hero__background .hero .desktop-menu .buscador__input-form .input-form-text:focus ~ label, .hero__background .hero .desktop-menu .buscador__input-form input-form-text:valid ~ label {
+            transform: translateY(-95%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px; }
+            .hero__background .hero .desktop-menu .buscador__input-form .input-form-text:focus ~ label .input-form-text:hover, .hero__background .hero .desktop-menu .buscador__input-form input-form-text:valid ~ label .input-form-text:hover {
+              border: solid 1.9px #000002;
+              transform: scale(1.03);
+              box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+              transition: border-color 1s ease-in-out; }
+        .hero__background .hero .desktop-menu .buscador__input-form--fechas {
+          position: absolute;
+          top: 55%;
+          left: 37%; }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas .input-form-text {
+            border: solid 2px #000;
+            width: 80%;
+            height: 35px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000;
+            transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas .textUser {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            position: absolute;
+            left: 15px;
+            top: -16px;
+            width: 110%;
+            color: rgba(133, 133, 133, 0.4);
+            pointer-events: none;
+            transform: translateY(1.3rem);
+            transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas .input-form-text:focus, .hero__background .hero .desktop-menu .buscador__input-form--fechas .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out; }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas .input-form-text:focus ~ label, .hero__background .hero .desktop-menu .buscador__input-form--fechas input-form-text:valid ~ label {
+            transform: translateY(-95%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px; }
+            .hero__background .hero .desktop-menu .buscador__input-form--fechas .input-form-text:focus ~ label .input-form-text:hover, .hero__background .hero .desktop-menu .buscador__input-form--fechas input-form-text:valid ~ label .input-form-text:hover {
+              border: solid 1.9px #000002;
+              transform: scale(1.03);
+              box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+              transition: border-color 1s ease-in-out; }
+        .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida {
+          position: absolute;
+          top: 55%;
+          left: 50%; }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida .input-form-text {
+            border: solid 2px #000;
+            width: 80%;
+            height: 35px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000;
+            transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida .textUser {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            position: absolute;
+            left: 15px;
+            top: -16px;
+            width: 110%;
+            color: rgba(133, 133, 133, 0.4);
+            pointer-events: none;
+            transform: translateY(1.3rem);
+            transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida .input-form-text:focus, .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out; }
+          .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida .input-form-text:focus ~ label, .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida input-form-text:valid ~ label {
+            transform: translateY(-95%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px; }
+            .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida .input-form-text:focus ~ label .input-form-text:hover, .hero__background .hero .desktop-menu .buscador__input-form--fechas--salida input-form-text:valid ~ label .input-form-text:hover {
+              border: solid 1.9px #000002;
+              transform: scale(1.03);
+              box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+              transition: border-color 1s ease-in-out; }
+        .hero__background .hero .desktop-menu .buscador__input-form--habitaciones {
+          position: absolute;
+          top: 55%;
+          left: 63%; }
+          .hero__background .hero .desktop-menu .buscador__input-form--habitaciones .input-form-text {
+            border: solid 2px #000;
+            width: 155%;
+            height: 35px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000;
+            transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form--habitaciones .textUser {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            position: absolute;
+            left: 15px;
+            top: -16px;
+            width: 110%;
+            color: rgba(133, 133, 133, 0.4);
+            pointer-events: none;
+            transform: translateY(1.3rem);
+            transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+          .hero__background .hero .desktop-menu .buscador__input-form--habitaciones .input-form-text:focus, .hero__background .hero .desktop-menu .buscador__input-form--habitaciones .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out; }
+          .hero__background .hero .desktop-menu .buscador__input-form--habitaciones .input-form-text:focus ~ label, .hero__background .hero .desktop-menu .buscador__input-form--habitaciones input-form-text:valid ~ label {
+            transform: translateY(-95%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px; }
+            .hero__background .hero .desktop-menu .buscador__input-form--habitaciones .input-form-text:focus ~ label .input-form-text:hover, .hero__background .hero .desktop-menu .buscador__input-form--habitaciones input-form-text:valid ~ label .input-form-text:hover {
+              border: solid 1.9px #000002;
+              transform: scale(1.03);
+              box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+              transition: border-color 1s ease-in-out; }
+      .hero__background .hero .hero__content h1 {
         font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        color: #0C120C;
-        display: flex;
-        justify-content: center; }
-  .media__icons {
-    color: #0C120C;
-    display: flex;
-    flex-direction: column; }
-  .hero__content--2 {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .hero__content--2 h5 {
-      color: orangered;
-      font-family: "Meddon";
-      font-size: 25px;
-      font-weight: 500;
-      transform: rotate(-15deg); }
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    position: fixed;
-    inset: 0;
-    padding: 1rem 1.3rem; }
-    .mobile-menu .mobile-menu__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-    .mobile-menu .mobile-menu__nav {
-      flex-grow: 1;
-      display: flex;
-      align-items: center; }
-      .mobile-menu .mobile-menu__nav ul {
-        list-style-type: none;
-        display: flex;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        color: white;
+        font-weight: 700;
+        font-size: 3.8rem; }
+        .hero__background .hero .hero__content h1 .subt {
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          font-weight: 300;
+          position: absolute;
+          margin-top: -16.4%;
+          margin-left: 100%;
+          color: #33658A; }
+      .hero__background .hero .media__icons {
+        position: absolute;
+        display: inline-flex;
         flex-direction: column;
-        gap: 1rem; }
-        .mobile-menu .mobile-menu__nav ul a {
-          color: white; } }
+        margin-top: 12.7%;
+        margin-left: -2%;
+        backdrop-filter: none;
+        font-size: 18px; }
+      .hero__background .hero .hero__content--2 h5 {
+        display: none; }
+      .hero__background .hero .hero__content--2 .hero__content--publicidad, .hero__background .hero .hero__content--2 .hero__content--publicidadpag {
+        display: none; }
+  main .section__explora-lugares h2 {
+    font-size: 2.8rem;
+    justify-content: center;
+    text-align: center; } }
 
 a {
   text-decoration: none; }
